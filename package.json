@@ -1,0 +1,25 @@
+{
+  "name": "helloworld_app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --watch --mode=development",
+    "start": "webpack-dev-server"
+  },
+  "dependencies": {
+    "babel-cli": "6.26.0",
+    "babel-core": "6.26.3",
+    "babel-loader": "7.1.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "6.24.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "webpack": "^4.44.1",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.12"
+  }
+}
