@@ -50,5 +50,5 @@ jobs:
       with:
         app-name: 'Cloud-Test-DY'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_e9697c47f9ec464da3782ef39df76dca }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_bd934ab6383c45cc9c2876c4a9df4ea0 }}
         package: .
