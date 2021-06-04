@@ -17,7 +17,8 @@ module.exports = {
     devtool: 'cheap-module-eval-source-map',
     devServer: {
         contentBase: path.join(__dirname, "public"),
-        port: 3003
+        open: true,
+        port: process.env.PORT || 8080
     }
 };
 
