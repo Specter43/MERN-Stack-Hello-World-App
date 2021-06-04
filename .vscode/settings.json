@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/8f5ca8bb-2995-4a54-a640-36fd364dd3e7/resourceGroups/RG-OHFS-DEV/providers/Microsoft.Web/sites/Cloud-Test-DY",
+    "appService.deploySubpath": "."
+}
