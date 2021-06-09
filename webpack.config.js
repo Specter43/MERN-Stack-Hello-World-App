@@ -1,12 +1,18 @@
-const path = require("path");
+const path = require('path');
+
+const HtmlWebPackPlugin = require("html-webpack-plugin");
+const htmlPlugin = new HtmlWebPackPlugin({
+  template: "./build/index.html", 
+  filename: "./index.html"
+});
 
 module.exports = {
-    entry: './app.js',
+    entry: './src/app.js',
     output: {
-        path: path.join(__dirname, "public"),
+        path: path.join(__dirname, "build"),
         filename: 'bundle.js'
     },
-    // loader
+    plugins: [htmlPlugin],
     module: {
         rules: [{ 
             loader: 'babel-loader',
@@ -14,9 +20,8 @@ module.exports = {
             exclude: /node_modules/
         }]
     },
-    devtool: 'cheap-module-eval-source-map',
     devServer: {
-        contentBase: path.join(__dirname, "public"),
+        contentBase: path.join(__dirname, "build"),
         open: true,
         port: process.env.PORT || 8080
     }
