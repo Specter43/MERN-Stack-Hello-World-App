@@ -1,3 +1,4 @@
+// A simple React component
 import React from 'react';
 import ReactDOM from 'react-dom';
 
