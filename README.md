@@ -1,4 +1,4 @@
-# React-App-With-Webpack-Babel
+# MERN-Stack-Hello-World-App
 ## A simple MERN stack Hello World application
 run `yarn` to and then `yarn start` 
 
