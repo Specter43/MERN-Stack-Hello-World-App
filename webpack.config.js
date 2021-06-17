@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-    entry: './src/app.js',
+    entry: './frontend/app.js',
     output: {
         path: path.join(__dirname, "build"),
         filename: 'bundle.js'
@@ -16,7 +16,7 @@ module.exports = {
     devServer: {
         contentBase: path.join(__dirname, "build"),
         open: true,
-        port: process.env.PORT || 8080
+        port: 3001
     }
 };
 

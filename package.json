@@ -7,7 +7,7 @@
   "scripts": {
     "build": "webpack --mode=development",
     "server": "node server/server.js",
-    "start": "webpack --mode=development && nodemon server/server.js"
+    "start": "webpack --mode=production && nodemon server/server.js"
   },
   "devDependencies": {
     "@babel/core": "^7.14.3",

@@ -4,7 +4,6 @@ const path = require('path');
 const cors = require('cors');
 
 const app = express();
-const port = process.env.PORT || 8080;
 
 app.use(express.urlencoded({ extended: false }));
 app.use(cors());
@@ -28,6 +27,6 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 require('../database/routes/router')(app);
 
 // Listen
-app.listen(port, () => {
-  console.log(`server started on port ${port}`);
+app.listen(3000, () => {
+  console.log(`server started on port 3000`);
 });
