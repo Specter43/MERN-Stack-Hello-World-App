@@ -2,6 +2,7 @@
 const express = require("express");
 const path = require('path');
 const cors = require('cors');
+
 const app = express();
 const port = process.env.PORT || 8080;
 
@@ -22,8 +23,9 @@ app.get("/", (req, res) => {
 const db = require('../database/database');
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
-const dbRouter = require('../database/routes/router');
-app.use('/', dbRouter);
+// const dbRouter = require('../database/routes/router');
+// app.use('/', dbRouter);
+require('../database/routes/router')(app);
 
 // Listen
 app.listen(port, () => {
