@@ -7,11 +7,15 @@ const dbName = "TEST_DB";
 
 const connectionString = `mongodb+srv://${userName}:${password}@azurecloudcluster.cry7k.mongodb.net/${dbName}?authSource=admin&replicaSet=atlas-nyttpd-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true`;
 
-mongoose
-    .connect(connectionString, { 
+mongoose.Promise = global.Promise;
+
+mongoose.connect(connectionString, { 
         useNewUrlParser: true, 
         useUnifiedTopology: true 
     })
+    .then(
+        console.log("Database connected"),
+    )
     .catch(e => {
         console.error('Connection error', e.message);
     })
