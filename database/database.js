@@ -10,7 +10,14 @@ const connectionString = "mongodb://cosmosgdct:w1WHLC1KeRNhvC8c8F8imkgl6xlcaXa0n
 // const connectionString = "mongodb://cosmosgdct:0DOcMEjJsbN8Za04yhN1ypBqS8wL9G9YlFsI1bN08yCqfOOGmrbGJcFFim8HEftFsIg3Vgdb96xTs4uRHXOBmA==@cosmosgdct.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@cosmosgdct@";
 mongoose.Promise = global.Promise;
 
-mongoose.connect(connectionString, { 
+mongoose.connect(connectionString, 
+    // { auth: 
+    //     { 
+    //         user: "cosmosgdct", 
+    //         password: "w1WHLC1KeRNhvC8c8F8imkgl6xlcaXa0nrvJWTrQ1VG0hgvs16VY9XNRgljRnTqRGMYWesDSF1CtiUTOhXqeww==" 
+    //     }
+    // }, 
+    { 
         useNewUrlParser: true, 
         useUnifiedTopology: true 
     })
