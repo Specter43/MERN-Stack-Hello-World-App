@@ -12,6 +12,4 @@ getData = async (req, res) => {
     }).catch(err => console.log(err));
 }
 
-module.exports = {
-    getData,
-}
+module.exports = { getData }

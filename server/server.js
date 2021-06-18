@@ -26,7 +26,9 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 // app.use('/', dbRouter);
 require('../database/routes/router')(app);
 
+// const port = 10255;
+const port = 3000;
 // Listen
-app.listen(3000, () => {
-  console.log(`server started on port 3000`);
+app.listen(port, () => {
+  console.log(`Server started on port ${port}`);
 });
