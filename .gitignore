@@ -105,4 +105,7 @@ dist
 
 # Webpack output
 bundle.js
+
+# Lock files
 package-lock.json
+yarn.lock
